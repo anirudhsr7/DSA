@@ -25,7 +25,6 @@ public class QuickSortAlgo {
 		if(start<end) {
 			
 			int pIndex = partition(array, start, end);
-//			System.out.println(pIndex);
 			quickSort(array, start, pIndex-1);
 			quickSort(array, pIndex+1, end);
 		}
