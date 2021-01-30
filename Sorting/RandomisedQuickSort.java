@@ -22,7 +22,7 @@ public class RandomisedQuickSort {
 	
 	public static int ramdomisedPartition(int[] array, int start, int end) {
 		int range = end - start + 1;
-		int pivotIndex = (int)Math.random() * range + start; 
+		int pivotIndex = (int)(Math.random() * range) + start; 
 		swap(array, pivotIndex, end);
 		return partition(array, start, end);
 	}
